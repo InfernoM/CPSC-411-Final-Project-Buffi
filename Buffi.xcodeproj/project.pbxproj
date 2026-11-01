@@ -28,7 +28,7 @@
 			);
 			name = Buffi;
 			path = Buffi;
-			sourceTree = "<absolute>";
+			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
