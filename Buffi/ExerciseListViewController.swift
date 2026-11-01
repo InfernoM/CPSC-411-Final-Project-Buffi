@@ -136,15 +136,30 @@ extension ExerciseListViewController: UITableViewDataSource {
 
 extension ExerciseListViewController: UITableViewDelegate {
 
+    // Called when a user taps an exercise
     func tableView(
         _ tableView: UITableView,
         didSelectRowAt indexPath: IndexPath
     ) {
+
+        // Remove selection highlight
         tableView.deselectRow(
             at: indexPath,
             animated: true
         )
 
-        
+        // Get the selected exercise
+        let selectedExercise = exercises[indexPath.row]
+
+        // Create the Exercise Detail screen
+        let detailVC = ExerciseDetailViewController(
+            exercise: selectedExercise
+        )
+
+        // Navigate to the Detail screen
+        navigationController?.pushViewController(
+            detailVC,
+            animated: true
+        )
     }
 }
