@@ -22,6 +22,21 @@ class HomeViewController: UIViewController {
         setupStackView()
     }
 
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+
+        let formatter = DateFormatter()
+        formatter.dateStyle = .full
+
+        let currentDate = formatter.string(from: Date())
+
+        var configuration = todayExerciseButton.configuration
+        configuration?.subtitle = currentDate
+        todayExerciseButton.configuration = configuration
+    }
+
+
     // Appearance
 
     private func setupAppearance() {

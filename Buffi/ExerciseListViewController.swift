@@ -50,7 +50,8 @@ class ExerciseListViewController: UIViewController {
             forCellReuseIdentifier: "ExerciseCell"
         )
 
-        tableView.rowHeight = 90
+        tableView.rowHeight = UITableView.automaticDimension
+        tableView.estimatedRowHeight = 90
 
         tableView.separatorColor = .darkGray
 
