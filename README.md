@@ -3,7 +3,7 @@
 
 ## Project Description
 
-Buffi is a mobile app that allows users to keep track of their exercises. It has an add function which allows users to record exercises, track workout durations, and view the muscle groups targeted during their workouts. The home screen lists their daily workout.
+Buffi is a mobile app that allows users to keep track of their exercises. This app is to be used by gym-goers or anyone who consistently exercises. It solves the problem of not being able to keep track of what exercises you have completed and what exercises you need to complete in a day. It has an add function which allows users to record exercises, track workout durations, and view the muscle groups targeted during their workouts. The home screen lists their daily workout. 
 
 For future implementation, there will be workout routines that users can set for themselves and a tracker that will track the workouts they've completed so far compared to the workouts they still need to complete for the day.
 
