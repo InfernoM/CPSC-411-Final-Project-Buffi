@@ -7,26 +7,7 @@ class ExerciseListViewController: UIViewController {
 
     private let tableView = UITableView()
 
-    private let exercises: [Exercise] = [
-        Exercise(
-            name: "Bench Press",
-            duration: 15,
-            muscleGroups: ["Chest", "Triceps", "Shoulders"],
-            date: Date()
-        ),
-        Exercise(
-            name: "Squats",
-            duration: 20,
-            muscleGroups: ["Quadriceps", "Glutes", "Hamstrings"],
-            date: Date()
-        ),
-        Exercise(
-            name: "Bicep Curls",
-            duration: 10,
-            muscleGroups: ["Biceps", "Forearms"],
-            date: Date()
-        )
-    ]
+    private var exercises: [Exercise] = []
 
     // Lifecycle
 
@@ -35,6 +16,14 @@ class ExerciseListViewController: UIViewController {
 
         setupAppearance()
         setupTableView()
+    }
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+
+        exercises = ExerciseStore.shared.getTodaysExercises()
+
+        tableView.reloadData()
     }
 
     // Appearance
