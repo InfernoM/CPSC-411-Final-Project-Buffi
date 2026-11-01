@@ -43,3 +43,13 @@ Provides text fields for entering exercise names, workout durations, and targete
              |
              v
             Home
+```
+
+## Screenshots
+
+<p align="center">
+  <img src="Screenshots/HomeScreen.png" width="200" alt="Home Screen">
+  <img src="Screenshots/ExerciseList.png" width="200" alt="Exercise List">
+  <img src="Screenshots/ExerciseDetails.png" width="200" alt="Exercise Details">
+  <img src="Screenshots/AddExercise.png" width="200" alt="Add Exercise">
+</p>
