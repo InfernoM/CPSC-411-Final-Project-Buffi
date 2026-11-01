@@ -204,7 +204,11 @@ class HomeViewController: UIViewController {
     // Navigation Actions
 
     @objc private func openAddExercise() {
-        
+        let addExerciseVC = AddEditExerciseViewController()
+        navigationController?.pushViewController(
+            addExerciseVC,
+            animated: true
+        )
     }
 
     @objc private func openTodayExercises() {
